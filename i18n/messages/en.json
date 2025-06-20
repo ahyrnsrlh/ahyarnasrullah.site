@@ -1,0 +1,258 @@
+{
+  "HomePage": {
+    "title": "Home",
+    "description": "Welcome to my personal website",
+    "intro": "Hi, I'm Akhyar Nasrullah Adilian",
+    "location": "Based in Lampung, Indonesia 🇮🇩",
+    "location_type": "Onsite",
+    "resume": "Passionate and seasoned Software Engineer with a strong focus on frontend development. Proficient in TypeScript and well-versed in all aspects of web technologies. Collaborative team player dedicated to delivering efficient, scalable, and visually appealing web applications.",
+    "skills": {
+      "title": "Skills",
+      "sub_title": "My professional skills."
+    },
+    "services": {
+      "title": "Service",
+      "sub_title": "I work as a freelancer to develop exceptional websites for brands, companies, institutions, and startups, focusing on strategic web solutions.",
+      "cta": {
+        "title": "Let's work together!",
+        "sub_title": "I'm open for freelance projects, feel free to email me to see how can we collaborate.",
+        "button": "Contact me"
+      }
+    }
+  },
+  "AboutPage": {
+    "title": "About",
+    "description": "A short story of me",
+    "resume": {
+      "paragraf_1": "Hello there! Thank you for visiting my personal website. I'm Ahyar Nasrullah Adilian, a student majoring in Computer Science at the University of Lampung. I have a strong interest in frontend development. With a solid foundation in JavaScript and TypeScript, as well as a comprehensive understanding of various frontend libraries and frameworks, I have navigated the ever-evolving landscape of web development with enthusiasm and dedication.",
+
+      "paragraf_2": "I focus on creating web applications that not only provide precise experiences but are also user-friendly. My specialization includes JavaScript and TypeScript, along with frameworks such as React, Vite, and Next.js. As a quick learner and adaptive thinker, I thrive in a dynamic environment where innovation is a driving force. My collaborative nature allows me to seamlessly integrate with teams, contributing not only to my technical skills but also embodying a humble attitude that values input from every team member.",
+
+      "paragraf_3": "I strongly believe that effective communication is crucial for success in any role. I am adaptable, think efficiently, and always strive for the best. My experiences have equipped me with analytical skills and strong leadership abilities. I am comfortable working collaboratively in a team and am excited about the opportunity to contribute to team success. Looking forward to the possibility of collaboration!"
+    },
+    "career": {
+      "title": "Career",
+      "sub_title": "My professional career journey.",
+      "careers": {
+        "career_0": {
+          "position": "Web Developer & UI/UX Designer",
+          "company": "Infinite Learning",
+          "logo": "/images/careers/infinitee.jpg",
+          "location": "Batam, Indonesia 🇮🇩",
+          "location_type": "Remote",
+          "type": "Full-time",
+          "start_date": "2024-09",
+          "end_date": "2024-12",
+          "industry": "school",
+          "link": "https://www.instagram.com/infinitelearning_id/?hl=en",
+          "responsibilities": {
+            "responsibility_1": "Led the team using Scrum methodology and ensured smooth project development processes.",
+            "responsibility_2": "Facilitated communication between stakeholders and the team, while prioritizing the backlog with the Product Owner.",
+            "responsibility_3": "Designed wireframes, mockups, and prototypes based on user research and needs analysis.",
+            "responsibility_4": "Developed a consistent design system and collaborated with developers to ensure proper implementation.",
+            "responsibility_5": "Built responsive and modern frontend interfaces using React and Tailwind CSS."
+          }
+        },
+        
+        "career_1": {
+          "position": "Communication and Information Staff",
+          "company": "Badan Eksekutif Mahasiswa Universitas Lampung (BEM U KBM Unila)",
+          "logo": "/images/careers/bangkit.png",
+          "location": "Lampung, Indonesia 🇮🇩",
+          "location_type": "onsite",
+          "type": "Part-time",
+          "start_date": "2023-02",
+          "end_date": "2024-02",
+          "industry": "school",
+          "link": "https://www.instagram.com/bem_unila/?hl=en",
+          "responsibilities": {
+            "responsibility_1": "Lead and coordinate a team in developing creative concepts and promotional materials for various events/programs organized by BEM Unila.",
+            "responsibility_2": "Capturing photos of events, activities, and members to visually document key moments and share them across our platforms, ensuring high-quality images that reflect the spirit and purpose of our organization.",
+            "responsibility_3": "Creating visually appealing and impactful designs for promotional materials, social media posts, event banners, and digital content that align with our branding and communication goals.",
+            "responsibility_4": "Planning, shooting, and producing videos for various organizational needs, including event recaps, promotional videos, and interviews. I work with lighting, framing, and audio techniques to create visually compelling video content."
+          }
+        },
+
+        "career_2": {
+          "position": "Information Media Staff",
+          "company": "Himpunan Mahasiswa Ilmu Komputer Universitas Lampung (HIMAKOM UNILA)",
+          "logo": "/images/careers/himasi-unja.jpeg",
+          "location": "Lampung, Indonesia 🇮🇩",
+          "location_type": "Onsite",
+          "type": "Part-time",
+          "start_date": "2023-02",
+          "end_date": "2024-02",
+          "industry": "school",
+          "link": "https://www.instagram.com/himakomunila/?hl=en",
+          "responsibilities": {
+            "responsibility_1": "Capturing photos of events, activities, and members to visually document key moments and share them across our platforms, ensuring high-quality images that reflect the spirit and purpose of our organization.",
+            "responsibility_2": "Creating visually appealing and impactful designs for promotional materials, social media posts, event banners, and digital content that align with our branding and communication goals.",
+            "responsibility_3": "Planning, shooting, and producing videos for various organizational needs, including event recaps, promotional videos, and interviews. I work with lighting, framing, and audio techniques to create visually compelling video content."
+          }
+        }
+      }
+    },
+    "education": {
+      "title": "Education",
+      "sub_title": "My educational journey.",
+      "school": "Lampung University",
+      "major": "Computer Science, (S.Kom)",
+      "logo": "/images/education/unila.png",
+      "location": "Lampung, Indonesia 🇮🇩",
+      "degree": "Bachelor's degree",
+      "start_year": 2022,
+      "end_year": 2026,
+      "link": "https://www.unila.ac.id"
+    },
+    "resume_download_button": "Download Resume",
+    "portfolio_download_button": "Download Portfolio"
+  },
+  "AchievementsPage": {
+    "title": "Achievements",
+    "description": "A collection of certificates and badges that I have earned throughout my professional journey.",
+    "error": "An error occurred on the server.",
+    "no_data": "No data available.",
+    "show_credential": "Show Credentials"
+  },
+  "ProjectsPage": {
+    "title": "Projects",
+    "description": "Several projects that I have worked on, both private and open source.",
+    "view_project": "View Project",
+    "tech_stack": "Tech Stack",
+    "back_button": "Back",
+    "source_code_text": "Source Code",
+    "live_demo_text": "Live Demo",
+    "error": "An error occurred on the server.",
+    "no_data": "No data available."
+  },
+  "DashboardPage": {
+    "title": "Dashboard",
+    "description": "This is my personal dashboard, built with Next.js API routes deployed as serverless functions.",
+    "error": "An error occurred on the server.",
+    "github": {
+      "title": "Contributions",
+      "sub_title": "My contributions from last year on github.",
+      "title_total_contribution": "Total",
+      "title_total_this_week_contributino": "This week",
+      "title_best_contribution": "Best",
+      "title_average_contribution": "Average",
+      "title_less_contribution": "Less",
+      "title_more_contribution": "More",
+      "unit": "day"
+    },
+    "wakatime": {
+      "title": "Weekly Statistic",
+      "sub_title": "My WakaTime last 7 days stats.",
+      "last_update": "Last update",
+      "start_date": "Start Date",
+      "end_date": "End Date",
+      "daily_average": "Daily Coding Average",
+      "daily_total": "This Week Coding Time",
+      "best_day": "Best Day Coding Time",
+      "all_time_since_today": "All Time Since Today",
+      "languages": "Languages"
+    },
+    "codewars": {
+      "title": "Codewars Statistic",
+      "sub_title": "My statistic score on codewars.",
+      "title_rank": "Rank",
+      "title_honor": "Honor",
+      "title_completed": "Completed",
+      "title_leaderboard": "Leaderboard",
+      "title_clan": "Clan",
+      "title_skills": "Skills"
+    },
+    "monkeytype": {
+      "title": "Monkeytype Statistic",
+      "sub_title": "My statistic score on Monkeytype.",
+      "joined": "Joined",
+      "current_streak": "Current streak",
+      "unit_days": "days",
+      "title_test_started": "Test started",
+      "title_test_completed": "Test completed",
+      "title_time_typing": "Time typing",
+      "title_leaderboard": "All-Time English Leaderboards",
+      "unit_seconds": "Seconds",
+      "unit_time": "time",
+      "unit_words": "words",
+      "top": "top",
+      "days_ago": "days ago",
+      "xp_until_next_level": "XP until next level",
+      "total_xp": "total XP"
+    }
+  },
+  "ChatRoomPage": {
+    "title": "Chat Room",
+    "description": "Leave whatever you like to say, suggestions, questions or anything!",
+    "placeholder": "Type a message...",
+    "sign_in": {
+      "title": "Please sign in to start. Don't worry, your data is safe.",
+      "label": "Sign in with",
+      "signed_label": "Signed in as",
+      "sign_out_label": "Sign out"
+    },
+    "widget": {
+      "title": "Chat Room",
+      "tooltip_title": "Go to Chat Room",
+      "tooltip_minimize": "Minimize",
+      "tooltip_signout": "Signout"
+    }
+  },
+  "ContactPage": {
+    "title": "Contact",
+    "description": "Let`s get in touch",
+    "social_media": {
+      "title": "Find me on social media",
+      "gmail": {
+        "title": "Stay in Touch",
+        "description": "Reach out via email for any inquiries or collaborations."
+      },
+      "instagram": {
+        "title": "Follow My Journey",
+        "description": "Stay updated with my latest posts and stories on Instagram."
+      },
+      "linkedin": {
+        "title": "Let's Connect",
+        "description": "Connect for collaboration or explore my professional experience."
+      },
+      "tiktok": {
+        "title": "Join the Fun",
+        "description": "Follow me on TikTok for entertaining and engaging content."
+      },
+      "github": {
+        "title": "Explore the Code",
+        "description": "Explore the source code for all my projects on GitHub."
+      }
+    },
+    "form": {
+      "title": "Or send me a message",
+      "input_name": "Name",
+      "input_email": "Email",
+      "input_message": "Message",
+      "button": "Send Email"
+    }
+  },
+  "Footer": {
+    "hire": "Hire me.",
+    "copyright_1": "COPYRIGHT © ",
+    "copyright_2": "ahyrnsrlh. All rights reserved."
+  },
+  "LocaleSwitcher": {
+    "en": "🇺🇸",
+    "id": "🇮🇩",
+    "label": "Language"
+  },
+  "Navigation": {
+    "Home": "Home",
+    "About": "About",
+    "Achievements": "Achievements",
+    "Projects": "Projects",
+    "Dashboard": "Dashboard",
+    "Chat Room": "Chat Room",
+    "Contact": "Contact"
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "button": "Take me home"
+  }
+}
