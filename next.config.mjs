@@ -18,6 +18,11 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true, // ✅ Temporarily ignore TypeScript errors during build
   },
+  experimental: {
+    optimizePackageImports: ['@vercel/analytics'],
+  },
+  // Add output configuration for better deployment
+  output: 'standalone',
 };
 
 export default withNextIntl(nextConfig);
