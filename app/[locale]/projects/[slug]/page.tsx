@@ -9,16 +9,13 @@ import { METADATA } from "@/common/constants/metadata";
 import { loadMdxFiles } from "@/common/libs/mdx";
 import { getProjectsDataBySlug } from "@/services/projects";
 
-export async function generateMetadata(
-  {
-    params,
-    searchParams,
-  }: {
-    params: Promise<{ locale: string; slug: string }>;
-    searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
-  },
-  parent: Promise<Metadata>,
-): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
+}): Promise<Metadata> {
   const resolvedParams = await params;
   if (!resolvedParams?.slug) {
     return {};

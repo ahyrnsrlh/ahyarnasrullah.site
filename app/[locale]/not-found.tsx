@@ -6,14 +6,11 @@ import { Metadata } from "next";
 import Container from "@/common/components/elements/Container";
 import { METADATA } from "@/common/constants/metadata";
 
-export async function generateMetadata(
-  {
-    params,
-  }: {
-    params: Promise<{ locale: string }>;
-  },
-  parent: Promise<Metadata>,
-): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "NotFoundPage" });
 
