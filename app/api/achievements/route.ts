@@ -31,7 +31,7 @@ export const GET = async (req: NextRequest) => {
 
     console.log("Achievements data fetched:", {
       count: data?.length || 0,
-      data: data?.slice(0, 2) || [] // Log first 2 items for debugging
+      data: data?.slice(0, 2) || [], // Log first 2 items for debugging
     });
 
     return NextResponse.json(data, { status: 200 });

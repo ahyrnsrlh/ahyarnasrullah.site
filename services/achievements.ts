@@ -33,7 +33,7 @@ export const getAchievementsData = async ({
 
     console.log("Achievements query result:", {
       count: data?.length || 0,
-      hasData: !!data && data.length > 0
+      hasData: !!data && data.length > 0,
     });
 
     return data || [];
