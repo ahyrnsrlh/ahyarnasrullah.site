@@ -11,9 +11,9 @@ export const GET = async () => {
   } catch (error) {
     console.error("Projects API error:", error);
     return NextResponse.json(
-      { 
-        message: "Internal Server Error", 
-        error: error instanceof Error ? error.message : "Unknown error" 
+      {
+        message: "Internal Server Error",
+        error: error instanceof Error ? error.message : "Unknown error",
       },
       { status: 500 },
     );

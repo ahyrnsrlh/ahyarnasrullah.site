@@ -3,14 +3,14 @@
  */
 export const getApiUrl = (path: string): string => {
   // Remove leading slash if present
-  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-  
+  const cleanPath = path.startsWith("/") ? path.slice(1) : path;
+
   // In production, use full URL
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     const baseUrl = window.location.origin;
     return `${baseUrl}/${cleanPath}`;
   }
-  
+
   // In server-side, use relative path
   return `/${cleanPath}`;
 };

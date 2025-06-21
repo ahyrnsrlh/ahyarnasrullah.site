@@ -2,7 +2,7 @@ import { createClient } from "@/common/utils/server";
 import { ProjectItem } from "@/common/types/projects";
 
 export const getProjectsData = async () => {
-  const supabase = createClient();
+  const supabase = await createClient();
 
   let { data, error } = await supabase
     .from("projects")
@@ -17,7 +17,7 @@ export const getProjectsData = async () => {
 export const getProjectsDataBySlug = async (
   slug: string,
 ): Promise<ProjectItem | null> => {
-  const supabase = createClient();
+  const supabase = await createClient();
 
   const { data, error } = await supabase
     .from("projects")

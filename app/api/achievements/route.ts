@@ -9,34 +9,38 @@ export const GET = async (req: NextRequest) => {
     const queryCategory = searchParams.get("category");
     const querySearch = searchParams.get("search");
 
-    console.log("Achievements API called with:", { queryCategory, querySearch });
+    console.log("Achievements API called with:", {
+      queryCategory,
+      querySearch,
+    });
+
+    let data;
 
     if (queryCategory && querySearch) {
-      const data = await getAchievementsData({
+      data = await getAchievementsData({
         category: queryCategory,
         search: querySearch,
       });
-      return NextResponse.json(data, { status: 200 });
+    } else if (queryCategory && queryCategory.trim()) {
+      data = await getAchievementsData({ category: queryCategory });
+    } else if (querySearch) {
+      data = await getAchievementsData({ search: querySearch });
+    } else {
+      data = await getAchievementsData({});
     }
 
-    if (queryCategory && queryCategory.trim()) {
-      const data = await getAchievementsData({ category: queryCategory });
-      return NextResponse.json(data, { status: 200 });
-    }
+    console.log("Achievements data fetched:", {
+      count: data?.length || 0,
+      data: data?.slice(0, 2) || [] // Log first 2 items for debugging
+    });
 
-    if (querySearch) {
-      const data = await getAchievementsData({ search: querySearch });
-      return NextResponse.json(data, { status: 200 });
-    }
-
-    const data = await getAchievementsData({});
     return NextResponse.json(data, { status: 200 });
   } catch (error) {
     console.error("Achievements API error:", error);
     return NextResponse.json(
-      { 
-        message: "Internal Server Error", 
-        error: error instanceof Error ? error.message : "Unknown error" 
+      {
+        message: "Internal Server Error",
+        error: error instanceof Error ? error.message : "Unknown error",
       },
       { status: 500 },
     );
