@@ -9,6 +9,8 @@ export const GET = async (req: NextRequest) => {
     const queryCategory = searchParams.get("category");
     const querySearch = searchParams.get("search");
 
+    console.log("Achievements API called with:", { queryCategory, querySearch });
+
     if (queryCategory && querySearch) {
       const data = await getAchievementsData({
         category: queryCategory,
@@ -30,8 +32,12 @@ export const GET = async (req: NextRequest) => {
     const data = await getAchievementsData({});
     return NextResponse.json(data, { status: 200 });
   } catch (error) {
+    console.error("Achievements API error:", error);
     return NextResponse.json(
-      { message: "Internal Server Error" },
+      { 
+        message: "Internal Server Error", 
+        error: error instanceof Error ? error.message : "Unknown error" 
+      },
       { status: 500 },
     );
   }

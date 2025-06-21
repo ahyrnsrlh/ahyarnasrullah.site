@@ -10,29 +10,48 @@ const LocaleSwitcher = () => {
   const router = useRouter();
   const pathname = usePathname();
 
-  // Detect current locale from pathname
-  const pathSegments = pathname.split('/');
-  const currentLocale = pathSegments[1] === 'id' ? 'id' : 'en';
+  // Detect current locale from pathname with safety check
+  const pathSegments = pathname?.split("/") || [];
+  const currentLocale = pathSegments[1] === "id" ? "id" : "en";
 
   // Static translations (tidak menggunakan useTranslations)
   const localeLabels = {
-    en: "English",
-    id: "Indonesia",
-    label: "Language"
+    en: "en",
+    id: "id",
+    label: "Language",
   };
 
   const handleLocaleChange = (newLocale: string) => {
+    if (!pathname) return;
+    
     startTransition(() => {
-      // Replace the locale in the current pathname
-      const segments = pathname.split('/');
-      if (segments[1] === 'en' || segments[1] === 'id') {
-        segments[1] = newLocale;
-      } else {
-        // If no locale in URL, add it
-        segments.splice(1, 0, newLocale);
+      try {
+        // Don't handle locale switching for API routes
+        if (pathname.includes('/api/')) {
+          return;
+        }
+        
+        // Replace the locale in the current pathname
+        const segments = pathname.split("/");
+        
+        if (segments[1] === "en" || segments[1] === "id") {
+          segments[1] = newLocale;
+        } else {
+          // If no locale in URL, add it
+          segments.splice(1, 0, newLocale);
+        }
+        
+        const newPathname = segments.join("/");
+        
+        // Safety check before navigation
+        if (newPathname && newPathname !== pathname && !newPathname.includes('/api/')) {
+          router.push(newPathname);
+        }
+      } catch (error) {
+        console.error("Locale switch error:", error);
+        // Fallback navigation
+        router.push(`/${newLocale}`);
       }
-      const newPathname = segments.join('/');
-      router.push(newPathname);
     });
   };
 

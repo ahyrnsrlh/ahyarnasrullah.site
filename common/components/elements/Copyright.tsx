@@ -4,7 +4,7 @@ const Copyright = () => {
   // Static text instead of translations to avoid NextIntlClientProvider dependency
   const copyrightText = {
     part1: "© Copyright",
-    part2: "Ahyar Nasrullah. All Rights Reserved."
+    part2: "Ahyar Nasrullah. All Rights Reserved.",
   };
 
   return (

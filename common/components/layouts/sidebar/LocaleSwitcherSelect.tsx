@@ -26,7 +26,7 @@ const LocaleSwitcherSelect = ({
 
   const onSelectChange = (event: ChangeEvent<HTMLSelectElement>) => {
     const nextLocale = event.target.value;
-    
+
     if (onChange) {
       // Use custom onChange if provided
       onChange(nextLocale);
@@ -34,9 +34,9 @@ const LocaleSwitcherSelect = ({
       // Fallback to manual navigation
       startTransition(() => {
         // Replace the locale in the current pathname
-        const segments = pathname.split('/');
+        const segments = pathname.split("/");
         segments[1] = nextLocale;
-        const newPathname = segments.join('/');
+        const newPathname = segments.join("/");
         router.push(newPathname);
       });
     }

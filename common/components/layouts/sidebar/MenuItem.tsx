@@ -92,6 +92,6 @@ const MenuItem = ({
       {itemComponent()}
     </Link>
   );
-}
+};
 
 export default MenuItem;

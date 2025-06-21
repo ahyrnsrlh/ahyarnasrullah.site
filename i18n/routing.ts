@@ -1,25 +1,25 @@
-import { defineRouting } from 'next-intl/routing';
-import { createSharedPathnamesNavigation } from 'next-intl/navigation';
+import { defineRouting } from "next-intl/routing";
+import { createSharedPathnamesNavigation } from "next-intl/navigation";
 
 export const routing = defineRouting({
   // A list of all locales that are supported
-  locales: ['en', 'id'],
+  locales: ["en", "id"],
 
   // Used when no locale matches
-  defaultLocale: 'en',
+  defaultLocale: "en",
 
   // The `pathnames` object holds pairs of internal and
   // external paths. Based on the locale, the external
   // paths are rewritten to the shared, internal ones.
   pathnames: {
-    '/': '/',
-    '/about': '/about',
-    '/projects': '/projects',
-    '/achievements': '/achievements',
-    '/dashboard': '/dashboard',
-    '/chat': '/chat',
-    '/contact': '/contact'
-  }
+    "/": "/",
+    "/about": "/about",
+    "/projects": "/projects",
+    "/achievements": "/achievements",
+    "/dashboard": "/dashboard",
+    "/chat": "/chat",
+    "/contact": "/contact",
+  },
 });
 
 // Lightweight wrappers around Next.js' navigation APIs

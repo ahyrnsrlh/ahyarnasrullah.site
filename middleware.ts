@@ -3,17 +3,17 @@ import { routing } from "./i18n/routing";
 
 export default createMiddleware({
   // A list of all locales that are supported
-  locales: ['en', 'id'],
-  
+  locales: ["en", "id"],
+
   // Used when no locale matches
-  defaultLocale: 'en',
-  
+  defaultLocale: "en",
+
   // Disable automatic locale detection for better debugging
-  localeDetection: false
+  localeDetection: false,
 });
 
 export const config = {
-  // Match only internationalized pathnames
+  // Match only internationalized pathnames, exclude API routes
   matcher: [
     // Enable a redirect to a matching locale at the root
     '/',
@@ -23,7 +23,7 @@ export const config = {
     '/(id|en)/:path*',
     
     // Enable redirects that add missing locales
-    // (e.g. `/pathnames` -> `/en/pathnames`)
-    '/((?!_next|_vercel|.*\\..*).*)'
+    // Exclude API routes, _next, _vercel, and files with extensions
+    '/((?!api|_next|_vercel|.*\\..*).*)'
   ]
 };
