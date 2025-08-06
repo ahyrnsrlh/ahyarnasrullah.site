@@ -2,6 +2,25 @@ import { CareerProps } from "../types/careers";
 
 export const CAREERS: CareerProps[] = [
   {
+    position: "Web Developer",
+    company: "Central Bank of Indonesia",
+    logo: "/images/careers/BI.png",
+    location: "Lampung, Indonesia 🇮🇩",
+    location_type: "Onsite",
+    type: "Internship",
+    start_date: "2025-07",
+    end_date: "2025-08",
+    industry: "banking",
+    link: "https://www.bi.go.id/",
+    responsibilities: [
+      "Developed GrowBI, a comprehensive internship management system designed to streamline the entire internship process from application to completion.",
+      "Built modern web applications using Laravel framework with Inertia.js for seamless SPA experience and Vue.js for dynamic frontend components.",
+      "Implemented efficient database management and API integration to handle internship applications, mentor assignments, and progress tracking.",
+      "Collaborated with senior developers and stakeholders to gather requirements and deliver user-centric solutions that improved operational efficiency.",
+      "Applied best practices in web development including responsive design, code optimization, and security considerations for financial sector applications.",
+    ],
+  },
+  {
     position: "Web Developer & UI/UX Designer",
     company: "Infinite Learning Indonesia",
     logo: "/images/careers/infinitee.jpg",

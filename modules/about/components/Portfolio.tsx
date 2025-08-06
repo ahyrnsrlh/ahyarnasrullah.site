@@ -5,7 +5,7 @@ import { LuDownload as DownloadIcon } from "react-icons/lu";
 const Portfolio = () => {
   const t = useTranslations("AboutPage");
 
-  const PORTFOLIO_URL = "https://magerbikinnya.com";
+  const PORTFOLIO_URL = "https://ahyarnasrullah.site";
 
   return (
     <Link
