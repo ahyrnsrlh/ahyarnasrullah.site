@@ -39,7 +39,7 @@ export const CAREERS: CareerProps[] = [
       "Built responsive and modern frontend interfaces using React and Tailwind CSS.",
     ],
   },
- 
+
   {
     position: "Communication and Information Staff",
     company: "Badan Eksekutif Mahasiswa Universitas Lampung (BEM U KBM Unila)",
@@ -58,7 +58,7 @@ export const CAREERS: CareerProps[] = [
       "Planning, shooting, and producing videos for various organizational needs, including event recaps, promotional videos, and interviews. I work with lighting, framing, and audio techniques to create visually compelling video content.",
     ],
   },
-   {
+  {
     position: "Information Media Staff",
     company:
       "Himpunan Mahasiswa Ilmu Komputer Universitas Lampung (HIMAKOM UNILA)",
