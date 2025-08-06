@@ -35,6 +35,25 @@
       "sub_title": "Perjalanan karier profesional saya.",
       "careers": {
         "career_0": {
+          "position": "Web Developer",
+          "company": "Bank Indonesia",
+          "logo": "/images/careers/BI.png",
+          "location": "Lampung, Indonesia 🇮🇩",
+          "location_type": "Di Tempat",
+          "type": "Magang",
+          "start_date": "2025-07",
+          "end_date": "2025-08",
+          "industry": "perbankan",
+          "link": "https://www.bi.go.id/",
+          "responsibilities": {
+            "responsibility_1": "Mengembangkan GrowBI, sistem manajemen magang komprehensif yang dirancang untuk merampingkan seluruh proses magang dari aplikasi hingga penyelesaian.",
+            "responsibility_2": "Membangun aplikasi web modern menggunakan framework Laravel dengan Inertia.js untuk pengalaman SPA yang seamless dan Vue.js untuk komponen frontend yang dinamis.",
+            "responsibility_3": "Mengimplementasikan manajemen database yang efisien dan integrasi API untuk menangani aplikasi magang, penugasan mentor, dan pelacakan kemajuan.",
+            "responsibility_4": "Berkolaborasi dengan developer senior dan stakeholder untuk mengumpulkan requirements dan menyediakan solusi yang berpusat pada pengguna untuk meningkatkan efisiensi operasional.",
+            "responsibility_5": "Menerapkan praktik terbaik dalam pengembangan web termasuk desain responsif, optimasi kode, dan pertimbangan keamanan untuk aplikasi sektor keuangan."
+          }
+        },
+        "career_1": {
           "position": "Web Developer & UI/UX Designer",
           "company": "Infinite Learning",
           "logo": "/images/careers/infinitee.jpg",
@@ -54,7 +73,7 @@
           }
         },
 
-        "career_1": {
+        "career_2": {
           "position": "Staf Komunikasi dan Informasi",
           "company": "Badan Eksekutif Mahasiswa Universitas Lampung (BEM U KBM Unila)",
           "logo": "/images/careers/bangkit.png",
@@ -72,7 +91,7 @@
             "responsibility_4": "Merencanakan, merekam, dan memproduksi video untuk berbagai kebutuhan organisasi, termasuk dokumentasi acara, video promosi, dan wawancara. Saya bekerja dengan teknik pencahayaan, framing, dan audio untuk menghasilkan konten video yang menarik secara visual."
           }
         },
-        "career_2": {
+        "career_3": {
           "position": "Staf Media Informasi",
           "company": "Himpunan Mahasiswa Ilmu Komputer Universitas Lampung (HIMAKOM UNILA)",
           "logo": "/images/careers/himasi-unja.jpeg",
